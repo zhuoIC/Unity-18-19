@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Principal : MonoBehaviour {
 
@@ -15,9 +16,15 @@ public class Principal : MonoBehaviour {
 		
 	}
 
+    public void SceneInit4()
+    {
+        
+        SceneManager.LoadScene(transform.tag);
+    }
+
     public void Salir()
     {
-        if (GUI.Button(new Rect(Screen.height/2, Screen.width/2, 20, 20), "YES"))
+        if (GUI.Button(new Rect(Screen.height/2, Screen.width/2, 50, 50), "YES"))
         {
             Application.Quit();
         }

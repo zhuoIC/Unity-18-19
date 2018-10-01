@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Scene_04
+  - Scene_05
+  - Scene_06
+  - Scene_07
   layers:
   - Default
   - TransparentFX
